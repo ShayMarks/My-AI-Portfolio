@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your AI Creations</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#videos">Videos</a></li>
+        <li><a href="#gpts">GPTs</a></li>
+        <li><a href="#podcasts">Podcasts</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!--home & tools-->
+  <section id="home">
+    <h1>Welcome to My AI Creations</h1>
+    <p>Here I will present works I made using artificial intelligence and explanations of how I did it, from concept to
+      creation.</p>
+    <h1>The tools I specialize in</h1>
+    <!--chatGPT-->
+    <div class="tolls-container">
+      <div class="tool" onclick="openToolModal('chatGPTModal')">
+        <img src="icons/chatGPT.png" alt="chatGPT">
+        <p>chatGPT</p>
+      </div>
+      <!--claudeAI-->
+      <div class="tolls-container">
+        <div class="tool" onclick="openToolModal('claudeAIModal')">
+          <img src="icons/claudeAI.png" alt="claudeAI">
+          <p>claudeAI</p>
+        </div>
+      </div>
+      <!--midjourney-->
+      <div class="tolls-container">
+        <div class="tool" onclick="openToolModal('midjourneyModal')">
+          <img src="icons/midjourney.png" alt="midjourney">
+          <p>Midjourney</p>
+        </div>
+      </div>
+      <!--leonardo-->
+      <div class="tolls-container">
+        <div class="tool" onclick="openToolModal('leonardoModal')">
+          <img src="icons/leonardo.png" alt="leonardo">
+          <p>Leonardo</p>
+        </div>
+      </div>
+      <!--TensorArt-->
+      <div class="tolls-container">
+        <div class="tool" onclick="openToolModal('TensorArtModal')">
+          <img src="icons/TensorArt.png" alt="TensorArt">
+          <p>TensorArt</p>
+        </div>
+      </div>
+      <!--Runway-->
+      <div class="tolls-container">
+        <div class="tool" onclick="openToolModal('RunwayModal')">
+          <img src="icons/Runway.png" alt="Runway">
+          <p>Runway</p>
+        </div>
+      </div>
+      <!--KitsAI-->
+      <div class="tolls-container">
+        <div class="tool" onclick="openToolModal('KitsAIModal')">
+          <img src="icons/KitsAI.png" alt="KitsAI">
+          <p>KitsAI</p>
+        </div>
+      </div>
+      <!--elevenlabs-->
+      <div class="tolls-container">
+        <div class="tool" onclick="openToolModal('elevenlabsModal')">
+          <img src="icons/elevenlabs.png" alt="elevenlabs">
+          <p>Elevenlabs</p>
+        </div>
+      </div>
+      <!-- ...coming soon... -->
+    </div>
+  </section>
+
+  <!-- Modals for each tool -->
+  <!-- chatGPT -->
+  <div id="chatGPTModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div class="modal-header">
+        <h2>chatGPT</h2>
+      </div>
+      <div class="modal-body">
+        <p>ChatGPT is an AI language model by OpenAI, designed for text generation and understanding, useful in
+          conversations, content creation, and information queries.
+        </p>
+
+        <p> Ideal for chatbots, creative writing, educational support, and enhancing web apps with AI-driven
+          interactions.
+        </p>
+
+        <p>Offers both free and paid versions; paid plans like ChatGPT Plus provide additional features
+          and priority access. Check OpenAI's website for current pricing.</p>
+        <div class="rating-section">
+          <span class="rating-title">Rating:</span>
+          <span class="stars">★★★★★</span>
+        </div>
+        <div class="modal-footer">
+          <a href="https://chat.openai.com/" target="_blank" class="learn-more-btn">Go to the site</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- claudeAI -->
+  <div id="claudeAIModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div class="modal-header">
+        <h2>claude AI</h2>
+      </div>
+      <div class="modal-body">
+        <p>Claude is an AI assistant created by Anthropic to be helpful, harmless, and honest. It uses a
+          conversational
+          AI model called Constitutional AI to provide useful information to users while avoiding harmful, unethical,
+          or
+          dangerous responses.
+        </p>
+
+        <p> Ideal for Getting coherent answers to factual questions
+          Receiving feedback on ideas or documents -having natural conversations and discussions performing limited
+          creative tasks like prose generation
+          automating simple digital tasks through voice commands
+        </p>
+
+        <p>Midjourney's innovations are particularly significant in the realms of digital art, design, and media
+          production, offering new tools for artists, designers, and content creators to explore unique visual
+          concepts
+          and augment their creative processes. Their work contributes to the broader field of AI, pushing the
+          boundaries of what artificial intelligence can achieve in the domain of creative visual expression.</p>
+        <div class="rating-section">
+          <span class="rating-title">Rating:</span>
+          <span class="stars">★★★★✩</span>
+        </div>
+        <div class="modal-footer">
+          <a href="https://claude.ai/" target="_blank" class="learn-more-btn">Go to the site</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- midjourney -->
+  <div id="midjourneyModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div class="modal-header">
+        <h2>Midjourney</h2>
+      </div>
+      <div class="modal-body">
+        <p>Midjourney is an independent research lab focusing on developing advanced AI technologies, with a
+          particular
+          emphasis on creating AI models capable of generating highly detailed and creative visual art. Unlike
+          language-based AI models like ChatGPT or Claude AI, Midjourney's primary focus is on visual arts and
+          imagery.
+        </p>
+
+        <p>
+          The lab's notable work includes the development of AI systems that can generate images from textual
+          descriptions. These systems utilize deep learning techniques to interpret written prompts and translate them
+          into visual artworks, ranging from realistic images to more abstract and conceptual art.
+        </p>
+
+        <p>Claude is currently in a limited free beta testing period. General public availability and
+          pricing details have not been announced yet by Anthropic. It is expected to be a paid service or software
+          when
+          released.</p>
+        <p>Prices at Midjourney range from $10 to $120 depending on the plan.</p>
+        <div class="rating-section">
+          <span class="rating-title">Rating:</span>
+          <span class="stars">★★★★★</span>
+        </div>
+        <div class="modal-footer">
+          <a href="https://www.midjourney.com/home" target="_blank" class="learn-more-btn">Go to
+            the site</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Leonardo -->
+  <div id="leonardoModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div class="modal-header">
+        <h2>Leonardo</h2>
+      </div>
+      <div class="modal-body">
+        <p>Leonardo AI is an AI-driven platform specializing in creating hyper-realistic images and digital art using
+          generative technology. It leverages deep learning and neural networks to produce visuals that closely mimic
+          physical reality.
+        </p>
+
+        <p>
+          Primarily used for generating photorealistic images and digital art, it supports the creation of diverse
+          digital assets like environments and concept art. It's equipped for rapid ideation and allows users to train
+          their own AI models.
+        </p>
+
+        <p>Offers a range from free access to subscription-based models and 150 credits that renew each day, with
+          pricing
+          plans up to about $60 per month, varying by features and services.</p>
+        <div class="rating-section">
+          <span class="rating-title">Rating:</span>
+          <span class="stars">★★★★★</span>
+        </div>
+        <div class="modal-footer">
+          <a href="https://leonardo.ai/" target="_blank" class="learn-more-btn">Go to
+            the site</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Leonardo -->
+  <div id="TensorArtModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div class="modal-header">
+        <h2>TensorArt</h2>
+      </div>
+      <div class="modal-body">
+        <p> TensorArt is an AI image generator that simplifies the process of creating personalized AI-generated art.
+          It's designed to help users explore and create unique artwork using various AI models and tools.
+        </p>
+
+        <p>
+          It offers an intuitive interface with a selection of AI models to create a wide variety of artistic outputs,
+          including anime, super-realistic human figures and traditional art forms. The platform also allows users to
+          host and share their custom models.
+        </p>
+
+        <p>TensorArt is a free AI art generator, making it accessible to a wide audience, from beginners to
+          experienced
+          artists, with no subscription or payment required.
+          <br>There is an option for additional purchases on the site between $1 and $13
+        </p>
+        <div class="rating-section">
+          <span class="rating-title">Rating:</span>
+          <span class="stars">★★★✩✩</span>
+        </div>
+        <div class="modal-footer">
+          <a href="https://leonardo.ai/" target="_blank" class="learn-more-btn">Go to
+            the site</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Leonardo -->
+  <div id="RunwayModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div class="modal-header">
+        <h2>Runway</h2>
+      </div>
+      <div class="modal-body">
+        <p>Runway AI is a company that specializes in generative AI for creating multimedia content, focusing on
+          videos
+          and images. It utilizes advanced AI technologies like GANs and diffusion models.
+        </p>
+
+        <p>
+          Offers over 30 AI tools for a range of functions including video editing, image generation, and real-time
+          collaboration. It simplifies complex creative tasks like rotoscoping, motion tracking, and transcription.
+        </p>
+
+        <p>Ideal for content creators at all skill levels, Runway AI enables advanced video editing and multimedia
+          creation without requiring extensive coding or editing expertise.
+        </p>
+        <div class="rating-section">
+          <span class="rating-title">Rating:</span>
+          <span class="stars">★★★✩✩</span>
+        </div>
+        <div class="modal-footer">
+          <a href="https://runwayml.com/" target="_blank" class="learn-more-btn">Go to
+            the site</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- KitsAI -->
+  <div id="KitsAIModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div class="modal-header">
+        <h2>KitsAI</h2>
+      </div>
+      <div class="modal-body">
+        <p>KitsAI is an AI voice generation platform tailored for the music industry, focusing on providing licensed AI
+          vocals and prioritizing ethical practices in voice conversion.
+        </p>
+
+        <p>Offers tools for creating or training AI voices, with a library of studio-quality, royalty-free voices
+          suitable for various musical applications including lyric generation and sound sourcing.
+        </p>
+
+        <p>Collaborates with artists for official voice licensing, enabling artists to create, license, and share their
+          AI voice models, promoting ethical AI use in music and new opportunities for artist engagement and
+          monetization.
+        </p>
+        <p>KitsAI has a free plan that renews every month, you can purchase a plan for prices ranging from $10 to $60
+        </p>
+        <div class="rating-section">
+          <span class="rating-title">Rating:</span>
+          <span class="stars">★★★★✩</span>
+        </div>
+        <div class="modal-footer">
+          <a href="https://app.kits.ai/" target="_blank" class="learn-more-btn">Go to
+            the site</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- elevenlabs -->
+  <div id="elevenlabsModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div class="modal-header">
+        <h2>Elevenlabs</h2>
+      </div>
+      <div class="modal-body">
+        <p>ElevenLabs is a voice technology research company specializing in audio AI software, focusing on making
+          content universally accessible through advanced voice AI.
+        </p>
+
+        <p>Offers cutting-edge text-to-speech and speech-to-speech technology, enabling voiceover generation in multiple
+          languages and the transformation of voices with customizable emotions and delivery.
+        </p>
+
+        <p>Provides technology that combines AI with emotive capabilities for speech generation in any language,
+          targeting various fields like education, streaming, gaming, and real-time conversation.
+        </p>
+        Elevenlabs has a free plan, plus a $5 beginner plan and a $22 creator plan with a significant first month
+        discount.
+        <p>
+
+        </p>
+        <div class="rating-section">
+          <span class="rating-title">Rating:</span>
+          <span class="stars">★★★★★</span>
+        </div>
+        <div class="modal-footer">
+          <a href="https://elevenlabs.io/" target="_blank" class="learn-more-btn">Go to
+            the site</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- about -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I'm Shay Marks, a driven and passionate software engineering student with a deep fascination for artificial
+      intelligence. My academic and hands-on experience has been a journey of exploring the vast potential of AI, from
+      machine learning algorithms to innovative AI applications. Committed to continual learning, I enjoy pushing the
+      boundaries of technology to create solutions that are not only effective but also revolutionary in their field. My
+      work reflects my enthusiasm for leveraging AI to solve complex problems, create beautiful designs, and explore the
+      future of technology.
+    </p>
+    <div class="modal-footer">
+      <a href="https://shaymarks.github.io/My-Portfolio/" target="_blank" class="learn-more-btn">🌐 Check out My
+        Portfolio 🌐</a>
+    </div>
+
+  </section>
+
+  <!-- videos -->
+  <section id="videos">
+    <h2>Videos</h2>
+    <p>Explore my collection of AI-generated videos, showcasing the versatility and creativity of AI in motion.</p>
+    <div class="video-projects-container">
+      <!--rachel 1 project -->
+      <div class="video-project" onclick="openModal('video1Modal')">
+        <img src="images/rachel/rachel1.jpg" alt="rachel 1 Thumbnail">
+        <p>Rachel 1 - Trailer</p>
+      </div>
+      <!--rachel 2 project -->
+      <div class="video-project" onclick="openModal('video2Modal')">
+        <img src="images/rachel/rachel2.jpg" alt="rachel 2 Thumbnail">
+        <p>Rachel 2 - Trailer</p>
+      </div>
+      <!--rachel 3 project -->
+      <div class="video-project" onclick="openModal('video3Modal')">
+        <img src="images/rachel/rachel3.jpg" alt="rachel 3 Thumbnail">
+        <p>Rachel 3 - Trailer</p>
+      </div>
+
+    </div>
+    <div class="tolls-container">
+      <div class="info" onclick="openToolModal('makeVideo')">
+        <h3>
+          <p class="learn-more-btn">How to make video</p>
+        </h3>
+      </div>
+  </section>
+  <!-- Modals for videos -->
+  <!-- rachel 1 Modal -->
+  <div id="video1Modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div class="modal-header">
+      </div>
+      <video class="video-size" controls>
+        <source src="videos/rachel1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+  <!-- rachel 2 Modal -->
+  <div id="video2Modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div class="modal-header">
+      </div>
+      <video class="video-size" controls>
+        <source src="videos/rachel2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+  <!-- rachel 3 Modal -->
+  <div id="video3Modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div class="modal-header">
+      </div>
+      <video class="video-size" controls>
+        <source src="videos/rachel3.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+  <!-- how to make video ? Modal -->
+  <div id="makeVideo" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div class="modal-header">
+        <h2>How to make a video in 5 simple steps</h2>
+      </div>
+      <div class="modal-body">
+        <p>
+        <h4><img src="icons/claudeAI.png" alt="" class="modal-icon">
+          To write a script for the video, I used Claude AI, it's really creative, you can also use it to get an idea
+          for the plot/film/photos
+        </h4>
+        </p>
+        <p>
+        <h4><img src="icons/elevenlabs.png" alt="" class="modal-icon">
+          I used elevenlabs to convert the text of the script to audio</h4>
+        </p>
+        <p>
+        <h4><img src="icons/leonardo.png" alt="" class="modal-icon">
+          To create the pictures for frames I used Leonardo, it's easy to use and free with credits that renew every day
+        </h4>
+        </p>
+        <p>
+        <h4><img src="icons/Runway.png" alt="" class="modal-icon">
+          To turn the photos into short videos of about 4 seconds I used Runway </h4>
+        </p>
+        <p>
+        <h4>
+          Take the videos and audio and combine them in any video editing software </h4>
+      </div>
+    </div>
+  </div>
+
+  <!-- gpts -->
+  <section id="gpts">
+    <h2>GPTs</h2>
+    <p>Discover my GPT projects, showcasing advanced AI text generation and processing.</p>
+    <div class="gpt-projects-container">
+      <!-- Melody Match -->
+      <div class="gpt-project">
+        <p>Helps find songs and<br>Makes custom playlists<br>a musical assistant
+        </p>
+        <a href="https://chat.openai.com/g/g-nnsMWk0m5-melody-match">
+          <img src="icons/Melody Match.png" alt="Melody Match">
+          <h3>
+            <p>Melody Match</p>
+          </h3>
+        </a>
+      </div>
+      <!-- AI Path finder -->
+      <div class="gpt-project">
+        <p>Helps in finding AI<br>and GPTS tools<br>from the Internet</p>
+        <a href="https://chat.openai.com/g/g-5GHBBeEVH-ai-pathfinder" target="_blank">
+          <img src="icons/AI Path finder.png" alt="AI Path finder">
+          <h3>
+            <p>AI Path finder</p>
+          </h3>
+        </a>
+      </div>
+      <!-- Web Artist -->
+      <div class="gpt-project">
+        <p>Creates images without prompt<br>by extracting information<br>from the Internet</p>
+        <a href="https://chat.openai.com/g/g-JZwdhp8NH-web-artist" target="_blank">
+          <img src="icons/Web Artist.png" alt="Web Artist">
+          <h3>
+            <p>Web Artist</p>
+          </h3>
+        </a>
+      </div>
+    </div>
+    <div class="tolls-container">
+      <div class="info" onclick="openToolModal('makeGPTs')">
+        <h3>
+          <p class="learn-more-btn">How to make GPTs</p>
+        </h3>
+      </div>
+    </div>
+  </section>
+  <!-- how to make makeGPTs ? Modal -->
+  <div id="makeGPTs" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div class="modal-header"><img src="icons/chatGPT.png" alt="" class="modal-icon">
+        <h2>How to create a GPTs :</h2>
+      </div>
+      <div class="modal-body">
+        <p>
+        <h4>
+          To create GPTs, you need to buy the premium plan on chatGPT, which costs $20 per month
+        </h4>
+        </p>
+        <p>
+        <h4>Collect and preprocess relevant data for training or fine-tuning the model.
+          </p>
+          <p>
+          <h4>Train your own model
+          </h4>
+          </p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <section id="podcasts">
+    <h2>Podcasts</h2>
+    <p>Listen to my podcasts on various platforms.</p>
+    <div class="podcast-links">
+      <!-- YouTube Icon -->
+      <a href="https://www.youtube.com/watch?v=7A0WnnHgTDg&list=PLGDxJTaFZ6HdUqylXMNPC50XtOV35Pssn" target="_blank"
+        class="icon youtube">
+        <i class="fab fa-youtube"></i></a>
+      <!-- Spotify Icon -->
+      <a href="https://open.spotify.com/show/78wjvZ385peYKYqv4r2yYp?si=019bae6d80ef4b98" target="_blank"
+        class="icon spotify">
+        <i class="fab fa-spotify"></i></a>
+    </div>
+    <div class="tolls-container">
+      <div class="info" onclick="openToolModal('makePodcasts')">
+        <h3>
+          <p class="learn-more-btn">How to make Podcasts</p>
+        </h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- how to make makeGPTs ? Modal -->
+  <div id="makePodcasts" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div class="modal-header">
+        <h2>How to make a video in 4 simple steps</h2>
+      </div>
+      <div class="modal-body">
+        <p>
+        <h4><img src="icons/claudeAI.png" alt="" class="modal-icon">
+          To write a script for the podcast I used Cloud AI, it's really creative, you can also get an idea of what the
+          podcast will talk about and the name of the podcast and more
+        </h4>
+        </p>
+        <p>
+        <h4><img src="icons/chatGPT.png" alt="" class="modal-icon">
+          <img src="icons/leonardo.png" alt="" class="modal-icon">
+          <img src="icons/midjourney.png" alt="" class="modal-icon">
+          To create a logo for the podcast, you can use one of the image generators
+        </h4>
+        </p>
+        <p>
+        <h4><img src="icons/elevenlabs.png" alt="" class="modal-icon">
+          To turn the text from the episode's script into voice I used elevenlabs
+        </h4>
+        </p>
+        <p>
+        <h4>
+          Take the audio files and integrate them into any sound editing software </h4>
+      </div>
+    </div>
+  </div>
+
+  
+
+
+
+  <section id="gallery">
+    <h2>Image Gallery</h2>
+    <p>Explore various collections of AI-generated art and imagery.</p>
+
+    <div class="gallery-thumbnails">
+        <div class="gallery-thumbnail" onclick="openGalleryModal(0)">
+            <img src="images/harabotBarzel/war.png" alt="Gallery 1">
+            <h3>HARAVOT BARZEL</h3>
+        </div>
+        <div class="gallery-thumbnail" onclick="openGalleryModal(1)">
+            <img src="images/cyberPunk/cyberpunk5.png" alt="Gallery 2">
+            <h3>CYBERPUNK CITY</h3>
+        </div>
+    </div>
+    <div class="tolls-container">
+      <div class="info" onclick="openToolModal('makegallery')">
+        <h3>
+          <p class="learn-more-btn">How to make Gallery</p>
+        </h3>
+      </div>
+    </div>
+</section>
+
+<!-- Gallery Modal -->
+<!-- Gallery Modal -->
+<div id="galleryModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <div class="modal-content-gallery" id="galleryContent">
+      <!-- Images will be loaded here by JavaScript -->
+  </div>
+  <div class="image-counter" id="imageCounter">1 / total</div>
+  <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+  <a class="next" onclick="changeImage(1)">&#10095;</a>
+</div>
+
+
+
+
+
+
+
+  <!-- how to make images ? Modal -->
+  <div id="makegallery" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div class="modal-header">
+        <h2>how to make pictures</h2>
+      </div>
+      <div class="modal-body">
+        <p>
+          <img src="icons/chatGPT.png" alt="" class="modal-icon">
+          <img src="icons/leonardo.png" alt="" class="modal-icon">
+          <img src="icons/midjourney.png" alt="" class="modal-icon">
+          <img src="icons/TensorArt.png" alt="" class="modal-icon">
+        </p>
+        <p>
+        <h4>
+          To create a pictures, you can use one of the image generators
+        </h4>
+        </p>
+        <p>
+        <h4>
+          Enter one of the image generators, register/log in to your user
+        </h4>
+        </p>
+        <p>
+        <h4>
+          Write the prompt, try to describe in detail what you want to be in the picture </h4>
+      </div>
+      <h2 style="color: yellow;">TIPS :</h2>
+      <p>
+        <h4><img src="icons/chatGPT.png" alt="" class="modal-icon">
+           To create images that require the most understanding of the image,
+           about current events, it is recommended to use chatGPT Plus, because it 
+           has access to the network and can research the topic before creating it 
+           - for example, with it I created the images about the haravot barzel war
+        </h4>
+      </p>
+      <p>
+        <h4>
+          <img src="icons/midjourney.png" alt="" class="modal-icon">
+           To create images that look good and go into the smallest details 
+           in the image using the format, I would recommend using midjourney 
+           - with which I created the images from the CYBERPUNK CITY gallery
+        </h4>
+      </p>
+      <p>
+        <h4>
+          <img src="icons/leonardo.png" alt="" class="modal-icon">
+          To create pictures that look good by format, 
+          for free! I would recommend using leonardo
+        </h4>
+      </p>
+      <p>
+        <h4><img src="icons/TensorArt.png" alt="" class="modal-icon">
+          To create human images that look real as if they 
+          were taken by a camera with high quality 
+          / human figures / models I would recommend using TensorArt
+        </h4>
+      </p>
+    </div>
+  </div>
+
+
+  <!-- footer -->
+  <footer>
+    <p>Contact: <a href="mailto:nrexhd@gmail.com">nrexhd@gmail.com</a></p>
+    <p>Find me on Social Media</p>
+    <div class="social-madia">
+      <a href="https://www.facebook.com/profile.php?id=100000534363504"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://www.linkedin.com/in/shay-marks-920546260/"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.instagram.com/shaymarks2/"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+  </footer>
+
+<script src="javascripts/tools.js"></script>
+<script src="javascripts/modal.js"></script>
+<script src="javascripts/gallery.js"></script>
+<script src="javascripts/other.js"></script>
+
+</body>
+
+</html>
