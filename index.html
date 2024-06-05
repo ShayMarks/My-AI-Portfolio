@@ -16,6 +16,7 @@
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#videos">Videos</a></li>
+        <li><a href="#music">Music</a></li>
         <li><a href="#gpts">GPTs</a></li>
         <li><a href="#podcasts">Podcasts</a></li>
         <li><a href="#gallery">Gallery</a></li>
@@ -84,6 +85,13 @@
           <p>Elevenlabs</p>
         </div>
       </div>
+            <!--Suno-->
+            <div class="tolls-container">
+              <div class="tool" onclick="openToolModal('sunoModal')">
+                <img src="icons/suno.png" alt="suno">
+                <p>Suno</p>
+              </div>
+            </div>
       <!-- ...coming soon... -->
     </div>
   </section>
@@ -358,6 +366,42 @@
     </div>
   </div>
 
+<!-- Suno -->
+<div id="sunoModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div class="modal-header">
+      <h2>Suno</h2>
+    </div>
+    <div class="modal-body">
+      <p>
+        Suno AI is an advanced platform for creating music using artificial intelligence. It allows users to create songs by providing text prompts, turning these inputs into complete musical compositions with both vocal and instrumental elements.
+      </p>
+
+      <p>
+        You can also create songs in "Custom Mode" where you can specify the style of the music and the lyrics, tailoring the music to your preferences.
+      </p>
+      <p>
+        The platform is built like a social network where you can share the songs you’ve created, listen to songs made by others, give them likes, and promote them.
+      </p>
+
+      <p>
+        Suno offers tools that enable users to transform their thoughts into songs, supporting a wide variety of musical styles and genres. The platform provides free access allowing up to 5 songs to be created each day, with 50 credits provided daily. Paid plans include a Pro Plan for $8 per month and a Premier Plan for $24 per month with a one-year commitment, both offering extended capabilities.
+      </p>
+      <div class="rating-section">
+        <span class="rating-title">Rating:</span>
+        <span class="stars">★★★★★</span>
+      </div>
+      <div class="modal-footer">
+        <a href="https://suno.com" target="_blank" class="learn-more-btn">Go to
+          the site</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
   <!-- about -->
   <section id="about">
     <h2>About Me</h2>
@@ -386,12 +430,12 @@
         <img src="images/rachel/rachel1.jpg" alt="rachel 1 Thumbnail">
         <p>Rachel 1 - Trailer</p>
       </div>
-      <!--rachel 2 project -->
+      <!-- rachel 2 project -->
       <div class="video-project" onclick="openModal('video2Modal')">
         <img src="images/rachel/rachel2.jpg" alt="rachel 2 Thumbnail">
         <p>Rachel 2 - Trailer</p>
       </div>
-      <!--rachel 3 project -->
+      <!-- rachel 3 project -->
       <div class="video-project" onclick="openModal('video3Modal')">
         <img src="images/rachel/rachel3.jpg" alt="rachel 3 Thumbnail">
         <p>Rachel 3 - Trailer</p>
@@ -475,6 +519,118 @@
       </div>
     </div>
   </div>
+  
+
+  <!-- Music Section -->
+<section id="music">
+  <h2>Music</h2>
+  <div class="music-container">
+    <!-- Song 1 -->
+    <div class="song">
+      <h3>Nova Shadow - Silent Cries</h3>
+      <audio id="audio1" src="music/Nova Shadow - Silent Cries.mp3"></audio>
+      <div class="controls">
+        <button class="play-btn" onclick="playSong('audio1')">Play</button>
+        <button class="pause-btn" onclick="pauseSong('audio1')">Pause</button>
+        <input type="range" id="audio1-progress" value="0" max="100" class="progress-bar" onchange="seekSong('audio1')">
+      </div>
+      <a href="https://www.youtube.com/watch?v=DavTHeznUBI" target="_blank" class="learn-more-btn">Watch on YouTube</a>
+    </div>
+
+    <!-- Song 2 -->
+    <div class="song">
+      <h3>Aria Moon - Youthful Fire</h3>
+      <audio id="audio2" src="music/Aria Moon - Youthful Fire.mp3"></audio>
+      <div class="controls">
+        <button class="play-btn" onclick="playSong('audio2')">Play</button>
+        <button class="pause-btn" onclick="pauseSong('audio2')">Pause</button>
+        <input type="range" id="audio2-progress" value="0" max="100" class="progress-bar" onchange="seekSong('audio2')">
+      </div>
+      <a href="https://www.youtube.com/watch?v=sNdV5owGLwQ" target="_blank" class="learn-more-btn">Watch on YouTube</a>
+    </div>
+
+        <!-- Song 3 -->
+        <div class="song">
+          <h3>Echo of Dawn - Rise of the Phoenix</h3>
+          <audio id="audio3" src="music/Echo of Dawn - Rise of the Phoenix.mp3"></audio>
+          <div class="controls">
+            <button class="play-btn" onclick="playSong('audio3')">Play</button>
+            <button class="pause-btn" onclick="pauseSong('audio3')">Pause</button>
+            <input type="range" id="audio3-progress" value="0" max="100" class="progress-bar" onchange="seekSong('audio3')">
+          </div>
+          <a href="https://www.youtube.com/watch?v=3A58CvtTUcg" target="_blank" class="learn-more-btn">Watch on YouTube</a>
+        </div>
+
+            <!-- Song 4 -->
+    <div class="song">
+      <h3>Ethan Silver - Sunset Whispers</h3>
+      <audio id="audio4" src="music/Ethan Silver - Sunset Whispers.mp3"></audio>
+      <div class="controls">
+        <button class="play-btn" onclick="playSong('audio4')">Play</button>
+        <button class="pause-btn" onclick="pauseSong('audio4')">Pause</button>
+        <input type="range" id="audio4-progress" value="0" max="100" class="progress-bar" onchange="seekSong('audio4')">
+      </div>
+      <a href="https://www.youtube.com/watch?v=oGn7jeuqpEI" target="_blank" class="learn-more-btn">Watch on YouTube</a>
+    </div>
+
+        <!-- Song 5 -->
+        <div class="song">
+          <h3>Tunderstrike - On the highway</h3>
+          <audio id="audio5" src="music/Tunderstrike - On the highway.mp3"></audio>
+          <div class="controls">
+            <button class="play-btn" onclick="playSong('audio5')">Play</button>
+            <button class="pause-btn" onclick="pauseSong('audio5')">Pause</button>
+            <input type="range" id="audio5-progress" value="0" max="100" class="progress-bar" onchange="seekSong('audio5')">
+          </div>
+          <a href="https://www.youtube.com/watch?v=eJWiovrquj8" target="_blank" class="learn-more-btn">Watch on YouTube</a>
+        </div>
+    <!-- more songs comming soon-->
+  </div>
+
+  <div class="tolls-container">
+    <div class="info" onclick="openToolModal('makemusic')">
+      <h3>
+        <p class="learn-more-btn">How to make Gallery</p>
+      </h3>
+    </div>
+  </div>
+</section>
+<!-- How to make music Modal -->
+<div id="makemusic" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div class="modal-header">
+      <h2>How to create music in 2 simple steps</h2>
+    </div>
+    <div class="modal-body">
+      <div class="step">
+        <h4>
+          <img src="icons/claudeAI.png" alt="Claude AI" class="modal-icon">
+          <img src="icons/chatGPT.png" alt="ChatGPT" class="modal-icon">
+          Use Claude AI or ChatGPT to write the lyrics and decide on the music style.
+        </h4>
+      </div>
+      <div class="step">
+        <h4>
+          <img src="icons/suno.png" alt="Suno" class="modal-icon">
+          Use Suno to create the music with the lyrics and the style you chose.
+        </h4>
+        <p>
+          <h4><img src="icons/chatGPT.png" alt="" class="modal-icon">
+            <img src="icons/leonardo.png" alt="" class="modal-icon">
+            <img src="icons/midjourney.png" alt="" class="modal-icon">
+            If you want to edit a picture for the song or the album you made
+          </h4>
+          </p>
+      </div>
+      <h2 style="color: yellow;">TIPS :</h2>
+      <h4>If you don't know what style of music you want, or what the song will be about, you can use the chatbot to get creative ideas for the song title and artist name.</h4>
+    </div>
+  </div>
+</div>
+
+  
+
 
   <!-- gpts -->
   <section id="gpts">
@@ -726,10 +882,12 @@
 <script src="javascripts/modal.js"></script>
 <script src="javascripts/gallery.js"></script>
 <script src="javascripts/other.js"></script>
+<script src="javascripts/music.js"></script>
+
 
 </body>
 
-<!--!BRING THEM HOME NOW-->
+<!--!BRING THEM HOME NOW!-->
 <div id="bthn" lang="en"></div><script>
   (function () {
      var script = document.createElement("script");
