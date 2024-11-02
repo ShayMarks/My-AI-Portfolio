@@ -85,13 +85,20 @@
           <p>Elevenlabs</p>
         </div>
       </div>
-            <!--Suno-->
-            <div class="tolls-container">
-              <div class="tool" onclick="openToolModal('sunoModal')">
-                <img src="icons/suno.png" alt="suno">
-                <p>Suno</p>
-              </div>
-            </div>
+      <!--Suno-->
+      <div class="tolls-container">
+        <div class="tool" onclick="openToolModal('sunoModal')">
+          <img src="icons/suno.png" alt="suno">
+          <p>Suno</p>
+        </div>
+      </div>
+      <!--Suno-->
+      <div class="tolls-container">
+        <div class="tool" onclick="openToolModal('websimModal')">
+          <img src="icons/websim.png" alt="suno">
+          <p>Websim</p>
+        </div>
+      </div>
       <!-- ...coming soon... -->
     </div>
   </section>
@@ -519,73 +526,98 @@
       </div>
     </div>
   </div>
-  
+<!-- WebSim -->
+<div id="websimModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div class="modal-header">
+      <h2>WebSim</h2>
+    </div>
+    <div class="modal-body">
+      <p>WebSim is an AI-driven platform that lets anyone, even without any coding knowledge, build full websites quickly and efficiently. By using natural language prompts, you can describe your ideas, and WebSim generates the entire site for you.</p>
+
+      <p>Once the site is created, you can add comments or make changes using simple text instructions. The platform updates the site automatically based on your requests, making the editing process intuitive and straightforward.</p>
+
+      <h2 style="color: yellow;">TIP :</h2>
+      <p>WebSim provides all the code in a single HTML file, with embedded CSS and JavaScript. If you want a more organized structure, paste the code into ChatGPT and ask to split it into separate HTML, CSS, and JavaScript files for easier management.</p>
+
+      <div class="rating-section">
+        <span class="rating-title">Rating:</span>
+        <span class="stars">★★★★✩</span>
+      </div>
+      <div class="modal-footer">
+        <a href="https://websim.ai" target="_blank" class="learn-more-btn">Go to the site</a>
+      </div>
+    </div>
+  </div>
+</div>
+
 
   <!-- Music Section -->
-<section id="music">
-  <h2>Music</h2>
-  <div class="music-container">
-    <!-- Song 1 -->
-    <div class="song">
-      <h3>Nova Shadow - Silent Cries</h3>
-      <audio id="audio1" src="music/Nova Shadow - Silent Cries.mp3"></audio>
-      <div class="controls">
-        <button class="play-btn" onclick="playSong('audio1')">Play</button>
-        <button class="pause-btn" onclick="pauseSong('audio1')">Pause</button>
-        <input type="range" id="audio1-progress" value="0" max="100" class="progress-bar" onchange="seekSong('audio1')">
-      </div>
-      <a href="https://www.youtube.com/watch?v=DavTHeznUBI" target="_blank" class="learn-more-btn">Watch on YouTube</a>
-    </div>
-
-    <!-- Song 2 -->
-    <div class="song">
-      <h3>Aria Moon - Youthful Fire</h3>
-      <audio id="audio2" src="music/Aria Moon - Youthful Fire.mp3"></audio>
-      <div class="controls">
-        <button class="play-btn" onclick="playSong('audio2')">Play</button>
-        <button class="pause-btn" onclick="pauseSong('audio2')">Pause</button>
-        <input type="range" id="audio2-progress" value="0" max="100" class="progress-bar" onchange="seekSong('audio2')">
-      </div>
-      <a href="https://www.youtube.com/watch?v=sNdV5owGLwQ" target="_blank" class="learn-more-btn">Watch on YouTube</a>
-    </div>
-
-        <!-- Song 3 -->
-        <div class="song">
-          <h3>Echo of Dawn - Rise of the Phoenix</h3>
-          <audio id="audio3" src="music/Echo of Dawn - Rise of the Phoenix.mp3"></audio>
-          <div class="controls">
-            <button class="play-btn" onclick="playSong('audio3')">Play</button>
-            <button class="pause-btn" onclick="pauseSong('audio3')">Pause</button>
-            <input type="range" id="audio3-progress" value="0" max="100" class="progress-bar" onchange="seekSong('audio3')">
-          </div>
-          <a href="https://www.youtube.com/watch?v=3A58CvtTUcg" target="_blank" class="learn-more-btn">Watch on YouTube</a>
+  <section id="music">
+    <h2>Music</h2>
+    <div class="music-container">
+      <!-- Song 1 -->
+      <div class="song">
+        <h3>Nova Shadow - Silent Cries</h3>
+        <audio id="audio1" src="music/Nova Shadow - Silent Cries.mp3"></audio>
+        <div class="controls">
+          <button class="play-btn" onclick="playSong('audio1')">Play</button>
+          <button class="pause-btn" onclick="pauseSong('audio1')">Pause</button>
+          <input type="range" id="audio1-progress" value="0" max="100" class="progress-bar" onchange="seekSong('audio1')">
         </div>
-
-            <!-- Song 4 -->
-    <div class="song">
-      <h3>Ethan Silver - Sunset Whispers</h3>
-      <audio id="audio4" src="music/Ethan Silver - Sunset Whispers.mp3"></audio>
-      <div class="controls">
-        <button class="play-btn" onclick="playSong('audio4')">Play</button>
-        <button class="pause-btn" onclick="pauseSong('audio4')">Pause</button>
-        <input type="range" id="audio4-progress" value="0" max="100" class="progress-bar" onchange="seekSong('audio4')">
+        <a href="https://www.youtube.com/watch?v=DavTHeznUBI" target="_blank" class="learn-more-btn">Watch on YouTube</a>
       </div>
-      <a href="https://www.youtube.com/watch?v=oGn7jeuqpEI" target="_blank" class="learn-more-btn">Watch on YouTube</a>
-    </div>
-
-        <!-- Song 5 -->
-        <div class="song">
-          <h3>Tunderstrike - On the highway</h3>
-          <audio id="audio5" src="music/Tunderstrike - On the highway.mp3"></audio>
-          <div class="controls">
-            <button class="play-btn" onclick="playSong('audio5')">Play</button>
-            <button class="pause-btn" onclick="pauseSong('audio5')">Pause</button>
-            <input type="range" id="audio5-progress" value="0" max="100" class="progress-bar" onchange="seekSong('audio5')">
-          </div>
-          <a href="https://www.youtube.com/watch?v=eJWiovrquj8" target="_blank" class="learn-more-btn">Watch on YouTube</a>
+  
+      <!-- Song 2 -->
+      <div class="song">
+        <h3>Aria Moon - Youthful Fire</h3>
+        <audio id="audio2" src="music/Aria Moon - Youthful Fire.mp3"></audio>
+        <div class="controls">
+          <button class="play-btn" onclick="playSong('audio2')">Play</button>
+          <button class="pause-btn" onclick="pauseSong('audio2')">Pause</button>
+          <input type="range" id="audio2-progress" value="0" max="100" class="progress-bar" onchange="seekSong('audio2')">
         </div>
-    <!-- more songs comming soon -->
-  </div>
+        <a href="https://www.youtube.com/watch?v=sNdV5owGLwQ" target="_blank" class="learn-more-btn">Watch on YouTube</a>
+      </div>
+  
+          <!-- Song 3 -->
+          <div class="song">
+            <h3>Echo of Dawn - Rise of the Phoenix</h3>
+            <audio id="audio3" src="music/Echo of Dawn - Rise of the Phoenix.mp3"></audio>
+            <div class="controls">
+              <button class="play-btn" onclick="playSong('audio3')">Play</button>
+              <button class="pause-btn" onclick="pauseSong('audio3')">Pause</button>
+              <input type="range" id="audio3-progress" value="0" max="100" class="progress-bar" onchange="seekSong('audio3')">
+            </div>
+            <a href="https://www.youtube.com/watch?v=3A58CvtTUcg" target="_blank" class="learn-more-btn">Watch on YouTube</a>
+          </div>
+  
+              <!-- Song 4 -->
+      <div class="song">
+        <h3>Ethan Silver - Sunset Whispers</h3>
+        <audio id="audio4" src="music/Ethan Silver - Sunset Whispers.mp3"></audio>
+        <div class="controls">
+          <button class="play-btn" onclick="playSong('audio4')">Play</button>
+          <button class="pause-btn" onclick="pauseSong('audio4')">Pause</button>
+          <input type="range" id="audio4-progress" value="0" max="100" class="progress-bar" onchange="seekSong('audio4')">
+        </div>
+        <a href="https://www.youtube.com/watch?v=oGn7jeuqpEI" target="_blank" class="learn-more-btn">Watch on YouTube</a>
+      </div>
+  
+          <!-- Song 5 -->
+          <div class="song">
+            <h3>Tunderstrike - On the highway</h3>
+            <audio id="audio5" src="music/Tunderstrike - On the highway.mp3"></audio>
+            <div class="controls">
+              <button class="play-btn" onclick="playSong('audio5')">Play</button>
+              <button class="pause-btn" onclick="pauseSong('audio5')">Pause</button>
+              <input type="range" id="audio5-progress" value="0" max="100" class="progress-bar" onchange="seekSong('audio5')">
+            </div>
+            <a href="https://www.youtube.com/watch?v=eJWiovrquj8" target="_blank" class="learn-more-btn">Watch on YouTube</a>
+          </div>
+      <!-- more songs comming soon -->
+    </div>
 
   <div class="tolls-container">
     <div class="info" onclick="openToolModal('makemusic')">
@@ -623,7 +655,7 @@
           </h4>
           </p>
       </div>
-      <h2 style="color: yellow;">TIPS :</h2>
+      <h2 style="color: yellow;">TIP :</h2>
       <h4>If you don't know what style of music you want, or what the song will be about, you can use the chatbot to get creative ideas for the song title and artist name.</h4>
     </div>
   </div>
@@ -759,6 +791,88 @@
   </div>
 
   
+<!-- Websites Section -->
+<!-- Websites Section -->
+<section id="websites">
+  <h2>Websites</h2>
+  <p>Here are some of my Websites built with the help of AI tools:</p>
+  <div class="projects-container">
+    <!-- Project 1 -->
+    <div class="project">
+      <h3>Group Expense Calculator</h3>
+      <p class="project-description">A simple tool to split expenses fairly among friends, making group cost sharing easy and efficient.</p>
+      <div class="project-links">
+        <a href="https://github.com/ShayMarks/Group-Expense-Calculator" target="_blank" class="learn-more-btn">Visit the GitHub</a>
+        <a href="https://shaymarks.github.io/Group-Expense-Calculator/" target="_blank" class="learn-more-btn">View on Site</a>
+      </div>
+    </div>
+    <!-- more project coming soon-->
+  </div>
+  <div class="tolls-container">
+    <div class="info" onclick="openToolModal('makeWebsite')">
+      <h3>
+        <p class="learn-more-btn">How to make a Website</p>
+      </h3>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- How to Make a Website Modal -->
+<div id="makeWebsite" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div class="modal-header">
+      <h2>How to make a website</h2>
+    </div>
+    <div class="modal-body">
+
+      <p>
+        <h4>
+          <img src="icons/websim.png" alt="" class="modal-icon">
+          To create a website, start by using WebSim AI, an intuitive tool for building entire websites without coding.
+        </h4>
+      </p>
+      <p>
+        <h4>
+          Simply write what you want your website to include and look like. Be as detailed as possible in your description.
+        </h4>
+      </p>
+      <p>
+        <h4>
+          WebSim will generate the site for you, and you can continue to edit it using natural language instructions.
+        </h4>
+      </p>
+      <h2 style="color: yellow;">TIPS :</h2>
+      <p>
+        <h4><img src="icons/chatGPT.png" alt="" class="modal-icon">
+           To organize the code provided by WebSim, which comes as a single HTML file, use ChatGPT to split it into separate HTML, CSS, and JavaScript files. 
+        </h4>
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal for How to Build It -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>How to Build a Website Using WebSim AI</h2>
+    <p>WebSim AI is an intuitive platform that allows you to create fully functional websites without any coding knowledge. Here’s how to use it:</p>
+    <ol>
+      <li>Visit the <a href="https://websim.ai" target="_blank">WebSim AI website</a>.</li>
+      <li>Click on "Create" and describe your idea for the website.</li>
+      <li>WebSim AI will generate the website based on your description.</li>
+      <li>You can customize and make edits to fit your needs.</li>
+      <li>Once done, publish your website with ease.</li>
+    </ol>
+    <h2 style="color: yellow;">TIP:</h2>
+    <p>WebSim provides all the code in a single HTML file, including CSS and JavaScript. If you want a cleaner structure, paste the code into ChatGPT and ask to split it into separate HTML, CSS, and JavaScript files for better organization.</p>
+  </div>
+</div>
+
 
 
 
@@ -775,6 +889,10 @@
             <img src="images/cyberPunk/cyberpunk5.png" alt="Gallery 2">
             <h3>CYBERPUNK CITY</h3>
         </div>
+        <div class="gallery-thumbnail" onclick="openGalleryModal(2)">
+          <img src="images/Independence/4cut.png" alt="Gallery 2">
+          <h3>Israel's 76th Independence Day</h3>
+      </div>
     </div>
     <div class="tolls-container">
       <div class="info" onclick="openToolModal('makegallery')">
